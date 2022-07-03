@@ -1,0 +1,9 @@
+FROM    node:latest
+
+COPY    . /usr/src/server
+
+EXPOSE  8080
+
+WORKDIR /usr/src/server
+
+CMD node server.js
